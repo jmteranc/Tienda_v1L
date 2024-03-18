@@ -7,8 +7,10 @@
     <body>
         <header th:replace="~{layout/plantilla :: header}"/>
 
-        <select th:field="*{categoria.idCategoria}"></select>
-        
+        <section th:replace="~{producto/fragmentos :: botonesAgregar}"/>
+        <section th:replace="~{producto/fragmentos :: agregarProducto}"/> 
+        <section th:replace="~{producto/fragmentos :: listadoProductos}"/>
+
         <footer th:replace="~{layout/plantilla :: footer}"/>      
       
     </body>
